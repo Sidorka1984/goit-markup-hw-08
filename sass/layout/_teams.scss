@@ -1,0 +1,52 @@
+.teams {
+  background-color: var(--tertiary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.teams-list {
+  display: flex;
+  margin-top: 50px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.teams-item {
+  width: 270px;
+  height: 428px;
+  &:not(:last-child) {
+    margin-right: var(--card-set-gap);
+  }
+}
+.teams-wrapper {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+}
+.teams-img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.teams-persons,
+.persons-job {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.persons-job {
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  margin-top: 10px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
