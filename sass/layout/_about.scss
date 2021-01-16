@@ -1,48 +1,73 @@
 .about .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.about-list {
-  display: flex;
-  // flex-wrap: wrap;
-  // margin-right: calc(-1 * var(--card-set-gap));
-}
-.about-list-item {
-  // flex-basis: calc(100% / 6 - var(--card-set-gap));
-  // &:not(:last-child) {
-  margin-right: var(--card-set-gap);
-}
-
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primary-text-color);
-  margin-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 .about-title {
-  font-weight: 400;
+  margin: 0;
   font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--secondary-text-color);
-  width: 270px;
-  height: 75px;
+  letter-spacing: 0.03em;
+  &:not(:last-child) {
+    margin-right: var(--card-set-gap);
+  }
+}
+.about-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--tertiary-background-color);
+  border-radius: 4px;
 }
 .about-icon {
   width: 70px;
   height: 70px;
 }
 
-.about-icon-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--tertiary-background-color);
-  border-radius: 4px;
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
+  .about-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .about-list {
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .about-list-item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list-item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: var(--card-set-gap);
+    }
+  }
 }
