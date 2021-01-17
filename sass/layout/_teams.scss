@@ -3,64 +3,83 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.teams .gallery-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
+
+.teams-item {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-background-color);
+}
+.teams-persons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
   text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+.persons-job {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.teams-wrapper {
+  padding-top: 30px;
 }
 @media screen and (max-width: 767px) {
   .teams-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .teams .gallery-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
-// .teams-list {
-//   display: flex;
-//   margin-top: 50px;
-//   outline: none;
-//   border: none;
-//   padding: 0;
-//   margin: 0;
-// }
-// .teams-item {
-//   width: 270px;
-//   height: 428px;
-//   &:not(:last-child) {
-//     margin-right: var(--card-set-gap);
-//   }
-// }
-// .teams-wrapper {
-//   text-align: center;
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 0px 0px 4px 4px;
-//   background-color: var(--primary-background-color);
-// }
-// .teams-img {
-//   border-top-left-radius: 4px;
-//   border-top-right-radius: 4px;
-// }
-// .teams-persons,
-// .persons-job {
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.188;
-//   letter-spacing: 0.03em;
-//   color: var(--primary-text-color);
-//   margin-bottom: 16px;
-// }
-// .persons-job {
-//   font-weight: 400;
-//   color: var(--secondary-text-color);
-//   margin-top: 10px;
-// }
-
-// .social-list {
-//   display: flex;
-//   justify-content: center;
-// }
+@media screen and (max-width: 1199px) {
+  .teams-wrapper {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .teams-list {
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teams-list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .teams-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teams-item:not(:last-child) {
+    margin-right: 30px;
+    padding-bottom: 30px;
+  }
+  .teams {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
