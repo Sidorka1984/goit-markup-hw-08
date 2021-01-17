@@ -120,8 +120,10 @@
                     <ul class="gallery-list list">
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/program/img.1-1x.webp, img.1-1x.webp, img.1-2x.webp" type="image/webp" />
-                            <source srcset="./images/program/img.1-1x.jpg 1x, img.1-2x.jpg 2x">
+                            <source srcset="./images/program/img.1.webp 1x, ./images/program/img.1-1x.webp 1x, ./images/program/img.1-2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/program/img.1-1x.jpg 1x, ./images/program/img.1-2x.jpg 2x"
+                            media="(min-width: 1200px)">
                             <img class="gallery-img" src="./images/program/img.1.jpg" alt="Десктопные приложения"></picture>
                        
                             <div class="gallery-label">
@@ -130,8 +132,10 @@
                     </li>
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/program/img.2-1x.webp, img.2-1x.webp, img.2-2x.webp" type="image/webp" />
-                            <source srcset="./images/program/img.2-1x.jpg 1x, img.2-2x.jpg 2x">
+                            <source srcset="./images/program/img.2.webp, ./images/program/img.2-1x.webp 1x, ./images/program/img.2-2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/program/img.2-1x.jpg 1x, ./images/program/img.2-2x.jpg 2x"
+                            media="(min-width: 1200px)">
                             <img class="gallery-img" src="./images/program/img.2.jpg" alt="Десктопные приложения">
                         </picture>
                        
@@ -141,8 +145,10 @@
                     </li>
                     <li class="gallery-item">
                         <picture>
-                            <source srcset="./images/program/img.3-1x.webp, img.-1x.webp, img.3-2x.webp" type="image/webp" />
-                            <source srcset="./images/program/img.3-1x.jpg 1x, img.3-2x.jpg 2x">
+                            <source srcset="./images/program/img.3.webp, ./images/program/img.-1x.webp 1x, ./images/program/img.3-2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/program/img.3-1x.jpg 1x, ./images/program/img.3-2x.jpg 2x"
+                            media="(min-width: 1200px)">
                             <img class="gallery-img" src="./images/program/img.3.jpg" alt="Десктопные приложения">
                         </picture>
                         
@@ -155,12 +161,33 @@
                 
             </section> 
             <!--команда-->
-            <!-- <section class="teams">
+            <section class="teams">
                 <h2 class="gallery-title">Наша команда</h2>
                 <div class="container">
                     <ul class="teams-list list">
                         <li class="teams-item">
-                            <img class="teams-img" src="./images/komand/product-designer.jpg" alt="дизайнер" width="270" height="260">
+                            <picture>
+                                <source
+                                    srcset="./images/komand/img1-desk-1x.webp 1x, ./images/komand/img1-desk-2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/komand/img1-desk-1x.jpg 1x, ./images/komand/img1-desk-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/komand/img1-tablet-1х.webp 1x, ./images/komand/img1-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                        type="image/webp">
+                                <source
+                                    srcset="./images/komand/img1-tablet-1х.jpg 1x, ./images/komand/img1-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/komand/img1-1х.webp 1x, ./images/komand/img1-2x.webp 2x"
+                                    media="(max-width: 767)" type="image/webp">
+                                <source 
+                                    srcset="./images/komand/img1-1х.jpg 1x, ./images/komand/img1-2х.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img class="teams-img" src="./images/komand/img1-1х.jpg" alt="дизайнер" />
+                            </picture>                            
                             <div class="teams-wrapper">
                                 <h3 class="teams-persons">Игорь Демьяненко</h3>
                                 <p class="persons-job" lang="en">Product Designer</p>
@@ -198,7 +225,28 @@
                             
                         </li>
                         <li class="teams-item">
-                            <img class="teams-img" src="./images/komand/frontend-developer.jpg" alt="разработчик" width="270" height="260">
+                            <picture>
+                                <source 
+                                    srcset="./images/komand/img2-desk-1x.webp 1x, ./images/komand/img2-desk-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                <source 
+                                    srcset="./images/komand/img2-desk-1x.jpg 1x, ./images/komand/img2-desk-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/komand/img2-tablet-1х.webp 1x, ./images/komand/img2-tablet-2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source 
+                                    srcset="./images/komand/img2-tablet-1х.jpg 1x, ./images/komand/img2-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <!-- <source 
+                                    srcset="./images/komand/img2-1х.webp 1x, ./images/komand/img2-2x.webp 2x" 
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source 
+                                    srcset="./images/komand/img2-1х.jpg 1x, ./images/komand/img2-2х.jpg 2x" 
+                                    media="(max-width: 767px)"> -->
+                                <img class="teams-img" src="./images/komand/img2-1х.jpg" alt="дизайнер" />
+                            </picture>                                                      
                             <div class="teams-wrapper">
                                 <h3 class="teams-persons">Ольга Репина</h3>
                                 <p class="persons-job" lang="en">Frontend Developer</p>
@@ -236,7 +284,21 @@
                            
                         </li>
                         <li class="teams-item">
-                            <img class="teams-img" src="./images/komand/marketing.jpg" alt="маркетолог" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/komand/img3-desk-1x.webp 1x, ./images/komand/img3-desk-2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/komand/img3-desk-1x.jpg 1x, ./images/komand/img3-desk-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/komand/img3-tablet-1х.webp 1x, ./images/komand/img3-tablet-2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/komand/img3-tablet-1х.jpg 1x, ./images/komand/img3-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/komand/img3-1х.webp 1x, ./images/komand/img3-2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
+                                <source srcset="./images/komand/img3-1х.jpg 1x, ./images/komand/img3-2х.jpg 2x" media="(max-width: 767px)">
+                                <img class="teams-img" src="./images/komand/img3-1х.jpg" alt="маркетолог" />
+                            </picture>
+                            
                             <div class="teams-wrapper">
                                 <h3 class="teams-persons">Николай Тарасов</h3>
                                 <p class="persons-job" lang="en">Marketing</p>
@@ -273,7 +335,27 @@
                             </div>                            
                         </li>
                         <li class="teams-item">
-                            <img class="teams-img" src="./images/komand/ul-designer.jpg" alt="интерфейс дизайнер" width="270" height="260">
+                            <picture>
+                                <source 
+                                srcset="./images/komand/img4-desk-1x.webp 1x, ./images/komand/img4-desk-2x.webp 2x" media="(min-width: 1200px)"
+                                    type="image/webp">
+                                <source 
+                                srcset="./images/komand/img4-desk-1x.jpg 1x, ./images/komand/img4-desk-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source
+                                 srcset="./images/komand/img4-tablet-1х.webp 1x, ./images/komand/img4-tablet-2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source 
+                                srcset="./images/komand/img4-tablet-1х.jpg 1x, ./images/komand/img4-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/komand/img4-1х.webp 1x, ./images/komand/img4-2x.webp 2x" 
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source 
+                                srcset="./images/komand/img4-1х.jpg 1x, ./images/komand/img4-2х.jpg 2x" 
+                                media="(max-width: 767px)">
+                                <img class="teams-img" src="./images/komand/img4-1х.jpg" alt="интерфейс дизайнер" />
+                            </picture>
+                            
                             <div class="teams-wrapper">
                                 <h3 class="teams-persons">Михаил Ермаков</h3>
                                 <p class="persons-job" lang="en">UI Designer</p>
@@ -311,7 +393,7 @@
                         </li>
                     </ul>
                 </div>              
-            </section> -->
+            </section>
             <!-- постояные -->
             <!-- <section class="clients">
                 <div class="container">
