@@ -1,30 +1,40 @@
 .backdrop {
+  perspective: 600px;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
   &.is-hidden {
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
   }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  position: relative;
   /* min-height: 581px; */
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
+  border-radius: 4px;
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 528px;
   }
 }
 .close-btn {
@@ -33,6 +43,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
+  padding: 0;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -156,6 +167,11 @@
       background-origin: border-box;
     }
   }
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+  }
 }
 
 .accent-policy-link {
@@ -174,5 +190,12 @@
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    max-height: 609px;
   }
 }
