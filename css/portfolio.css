@@ -293,12 +293,12 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-link,
   .header-mail,
   .header-tel {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.166;
     letter-spacing: 0.02em;
   }
