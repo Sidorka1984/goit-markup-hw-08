@@ -284,10 +284,6 @@ img {
   .header .logo-light {
     margin-right: 88px;
   }
-  .header-mail .header-tel {
-    font-size: 12px;
-    line-height: 1.16;
-  }
   .menu-item {
     margin-right: 50px;
   }
@@ -361,7 +357,7 @@ img {
   .header-mail,
   .header-tel {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.02em;
   }
