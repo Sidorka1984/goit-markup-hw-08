@@ -166,6 +166,7 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
 }
 
@@ -418,6 +419,14 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .filter-portfolio .portfolio-filter {
+    margin-top: -15px;
+    margin-left: -8px;
+    padding-bottom: 40px;
+  }
+}
+
 .button-filter:hover,
 .button-filter:focus {
   color: var(--primary-background-color);
@@ -480,6 +489,13 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-gallery-item {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
 .filter-gallery-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -499,6 +515,12 @@ img {
 @media screen and (max-width: 1199px) {
   .filter-gallery > .filter-gallery-item {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .filter-gallery-item:first-child .card-gallery {
+    padding-bottom: 56px;
   }
 }
 

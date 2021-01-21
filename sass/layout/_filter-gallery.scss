@@ -11,6 +11,10 @@
 .filter-gallery-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
   &:nth-child(3n) {
     margin-right: 0;
   }
@@ -29,6 +33,12 @@
     }
   }
 }
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .filter-gallery-item:first-child .card-gallery {
+    padding-bottom: 56px;
+  }
+}
+
 .filter-caption {
   font-weight: 700;
   font-size: 18px;

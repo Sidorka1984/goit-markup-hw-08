@@ -50,6 +50,7 @@
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
   @media screen and (min-width: 768px) {
     display: flex;
