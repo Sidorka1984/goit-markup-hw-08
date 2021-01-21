@@ -1230,7 +1230,7 @@ img {
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
-    max-height: 609px;
+    max-height: 100vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
