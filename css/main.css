@@ -881,14 +881,14 @@ img {
 }
 
 .join {
+  display: inline-block;
   font-family: var(--main-font);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-background-color);
-  display: block;
   margin-bottom: 20px;
 }
 
@@ -950,9 +950,6 @@ img {
   .dark .container {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 1199px) {
   .footer-address-container {
     margin-bottom: 60px;
   }
@@ -985,6 +982,7 @@ img {
 @media screen and (min-width: 768px) {
   .dark .container {
     display: flex;
+    justify-content: baseline;
   }
 }
 
